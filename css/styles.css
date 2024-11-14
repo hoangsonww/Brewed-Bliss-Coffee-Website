@@ -47,6 +47,26 @@ a:hover {
   color: #ffd700;
 }
 
+.welcome-banner {
+  background-color: #f3e8db;
+  text-align: center;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.welcome-banner h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-banner p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
 .mobile-nav-links {
   list-style: none;
   display: flex;
@@ -79,141 +99,207 @@ a:hover {
 }
 
 main {
-  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-}
-
-.form-section {
-  width: 100%;
-}
-
-.welcome-section {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.about-section,
-.contact-section,
-.welcome-section,
-.form-section,
-.gallery-section {
-  border-radius: 1rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.intro-img {
+  width: 95%;             
+  max-width: 1200px; 
+  height: 200px;   
+  display: block;  
+  margin: 1rem auto; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  object-fit: cover;
+  animation: scaleDown 0.3s forwards;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.intro-img:hover {
+  animation: scaleUp 0.3s forwards
+}
+
+.intro-img:not(:hover) {
+  animation: scaleDown 0.3s forwards;
+}
+
+.about-us, .featured-brews, .why-choose-us, .testimonials {
+  width: 100%;
+  margin: 2rem auto;
   padding: 1.5rem;
-  margin-bottom: 2rem;
+  background-color: #f7f4f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.about-section h2,
-.contact-section h2,
-.welcome-section h2,
-.welcome-section p,
-.about-section p,
-.contact-section p,
-.form-section h2,
-.gallery-section h2 {
-  margin-bottom: 1rem;
+.about-us, .testimonials {
   text-align: center;
 }
 
-.welcome-section h3 {
+.about-us h2, .featured-brews h2, .why-choose-us h2, .testimonials h2 {
+  color: #6B4F4F;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.welcome-button {
-  display: block;
-  margin: 0 auto;
-  padding: 0.75rem 2rem;
-  background-color: #220070;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-
-.welcome-button:hover {
-  background-color: #11003a;
-}
-
-.form-section {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.form-section h4 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-form label {
-  display: block;
-  margin: 0.5rem 0 0.25rem;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: border-color 0.3s;
-}
-
-form input:hover,
-form input:focus {
-  border-color: #220070;
-}
-
-.form-button {
-  width: 100%;
-  padding: 1rem;
-  margin-top: 1.5rem;
-  background: linear-gradient(45deg, #220070, #4b0082, #6a0dad);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  transition: transform 0.3s ease, background-color 0.3s ease, background 0.3s ease;
-  cursor: pointer;
-}
-
-.form-button:hover {
-  transform: scale(1.02);
-  background: linear-gradient(45deg, #6a0dad, #4b0082, #220070);
-}
-
-.gallery {
+.address {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-top: 1rem;
+  background-color: #f7f4f0;
+  padding: 1.5rem;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+.address h2 {
+  color: #6B4F4F;
+}
+
+.address p {
+  color: #555;
+}
+
+.address button {
+  padding: 0.5rem 1rem;
+  background-color: #6B4F4F;
+  color: #F0E5CF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 50%;
+}
+
+.address button:hover {
+  background-color: #555;
+}
+
+/* Features Container Styling */
+.features-container {
+  display: flex;
+  flex-direction: column; /* Stack vertically by default */
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.featured-brews,
+.why-choose-us {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #f7f4f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.brews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.brew h3 {
+  font-size: 1.2rem;
+  color: #6B4F4F;
+}
+
+.testimonials .testimonial {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #555;
+}
+
+.why-choose-us ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.why-choose-us ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Gallery Section Styling */
+/* Gallery Section Styling */
+/* Gallery Section Styling */
+.gallery {
+  width: 100%;           /* Full-width for the gallery */
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f7f4f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.gallery h2 {
+  color: #6B4F4F;
+  margin-bottom: 1rem;
+}
+
+.gallery p { 
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Gallery Grid Styling */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 grid on smaller screens */
+  gap: 10px; /* Space between images */
+}
+
+/* Image Styling */
 .gallery-img {
   width: 100%;
-  transition: transform 0.3s ease;
-  border-radius: 5px;
+  aspect-ratio: 1 / 1;   /* Ensures each image is square */
+  object-fit: cover;      /* Crops and scales images to fill the square space */
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* Add a subtle zoom on hover */
 }
 
+/* Hover effect for images */
 .gallery-img:hover {
-  transform: scale(1.02);
+  transform: scale(1.02); /* Slight zoom effect on hover */
 }
 
 footer {
-  background-color: #220070;
-  color: #fff;
+  background-color: #6B4F4F;
+  color: #F0E5CF;
   text-align: center;
   padding: 1rem 0;
-  font-size: 0.9rem;
+  margin-top: 1rem;
 }
 
 footer p {
+  font-size: 1rem;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -251,40 +337,23 @@ footer p {
     justify-content: space-between;
   }
 
-  main {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr); /* 1x4 grid on larger screens */
+  }
+  
+  .intro-img {
+    width: 80%;             /* Set the width to 80% of the screen */
+    max-width: 1200px;      /* Optional: Limit the maximum width for larger screens */
+    height: 300px;           /* Maintain the aspect ratio */
+    display: block;         /* Center the image horizontally */
+    margin: 0 auto;         /* Center the image horizontally */
+    border-radius: 10px;    /* Optional: Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a soft shadow */
+    object-fit: cover;
+  }
+
+  .features-container {
+    flex-direction: row; /* Side-by-side on desktop */
     gap: 1rem;
-}
-
-  .welcome-section,
-  .form-section {
-    flex: 1;
-    margin-bottom: 0;
-  }
-
-  .contact-section {
-    width: 100%;
-  }
-
-  .form-section {
-    max-width: 600px;
-    margin: 0;
-  }
-
-  .gallery-section {
-    flex-basis: 100%;
-    margin-top: 2rem;
-  }
-
-  .gallery {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .gallery-img {
-    max-width: 32%;
   }
 }

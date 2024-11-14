@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Marvelous Website</title>
+    <title>Brewed Bliss Coffee</title>
     <link rel="stylesheet" href="css/styles.css">
     <!-- Here I am using Font Awesome for the menu (hamburger) icon for better aesthetics -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Enhance the website with a favicon -->
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Enhance the app even more with a manifest file to make it a PWA -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Theme color for the app -->
+    <meta name="theme-color" content="#6B4F4F">
   </head>
   <body>
     <header>
@@ -31,39 +35,106 @@
     </header>
 
     <main>
-      <section class="welcome-section">
-        <h2>Welcome to A Marvelous Website</h2>
-        <h3>We're glad you are here</h3>
-        <p>Explore this creative website created for your enjoyment!</p>
-        <button class="welcome-button">Discover More</button>
+      <!-- Welcome Banner Section -->
+      <section class="welcome-banner">
+        <h2>Welcome to Brewed Bliss</h2>
+        <p>Your Daily Dose of Comfort and Coffee</p>
       </section>
 
-      <section class="form-section">
-        <h2>Contact Us</h2>
-        <h4>Join our mailing list for updates!</h4>
-        <form id="contact-form">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+      <!-- Image Section 1 - Eager Loading for faster loading -->
+      <img src="img/intro-image.jpg" alt="Welcome Image" class="intro-img" loading="eager">
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-
-          <button type="submit" class="form-button">SUBMIT</button>
-        </form>
+      <!-- About Us Section -->
+      <section class="about-us">
+        <h2>Who We Are</h2>
+        <p>
+          At Brewed Bliss, we believe that coffee is more than just a beverage – it’s an experience. Located in the heart of the city, our coffee shop provides a cozy space for coffee lovers to unwind, catch up with friends, or get some work done. Our baristas are passionate about crafting the perfect cup, using only ethically-sourced beans from the best farms around the world. Join us for a moment of peace and an exceptional coffee experience.
+        </p>
       </section>
 
-      <section class="gallery-section">
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <img src="img/img1.jpg" alt="Gallery Image 1" class="gallery-img">
-            <img src="img/img2.jpg" alt="Gallery Image 2" class="gallery-img">
-            <img src="img/img3.jpg" alt="Gallery Image 3" class="gallery-img">
+      <!-- Image Section 2 - Lazy Loading for better performance -->
+      <img src="img/intro-image-2.jpg" alt="Welcome Image" class="intro-img" loading: lazy>
+
+      <!-- Featured Brews and Why Choose Us Container -->
+      <div class="features-container">
+        <!-- Featured Brews Section -->
+        <section class="featured-brews">
+          <h2>What We Offer</h2>
+          <div class="brews-list">
+            <div class="brew">
+              <h3>Espresso Bliss</h3>
+              <p>A rich, smooth espresso with a robust flavor and hints of dark chocolate.</p>
+            </div>
+            <div class="brew">
+              <h3>Vanilla Latte</h3>
+              <p>A creamy, velvety latte infused with a hint of vanilla for a sweet finish.</p>
+            </div>
+            <div class="brew">
+              <h3>Caramel Macchiato</h3>
+              <p>Our classic macchiato topped with a drizzle of caramel for a perfect blend of sweet and bold.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us">
+          <h2>Why Choose Brewed Bliss?</h2>
+          <ul>
+            <li>Freshly brewed coffee made with high-quality, ethically sourced beans.</li>
+            <li>A warm, inviting atmosphere perfect for work, study, or relaxation.</li>
+            <li>Skilled baristas who care about every cup they make.</li>
+            <li>Seasonal drinks and a variety of treats to complement your coffee.</li>
+            <li>And most importantly, a commitment to providing you with the best coffee experience possible!</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Gallery Section -->
+      <section class="gallery">
+        <h2>Our Coffee Moments</h2>
+        <p>Take a look at some of our favorite coffee moments at Brewed Bliss.</p>
+        <div class="gallery-grid">
+          <!-- Here I am using the loading attribute to lazy load the images for better performance -->
+          <img src="img/gallery1.jpg" alt="Coffee Image 1" class="gallery-img" loading="lazy">
+          <img src="img/gallery2.jpg" alt="Coffee Image 2" class="gallery-img" loading="lazy">
+          <img src="img/gallery3.jpg" alt="Coffee Image 3" class="gallery-img" loading="lazy">
+          <img src="img/gallery4.webp" alt="Coffee Image 4" class="gallery-img" loading="lazy">
         </div>
+      </section>
+
+      <!-- Customer Testimonials Section -->
+      <section class="testimonials">
+        <h2>Customer Testimonials</h2>
+        <div class="testimonial">
+          <p>"Brewed Bliss is my go-to coffee shop. The atmosphere is amazing, and the coffee is always perfect!" - Sarah J.</p>
+        </div>
+        <div class="testimonial">
+          <p>"Absolutely love their vanilla latte! The perfect balance of flavor and creaminess." - Michael T.</p>
+        </div>
+        <div class="testimonial">
+          <p>"I can’t start my day without a cup of Espresso Bliss from here. Highly recommended!" - Emily R.</p>
+        </div>
+        <div class="testimonial">
+          <p>"The staff is so friendly and welcoming. It’s like a home away from home." - David S.</p>
+        </div>
+        <div class="testimonial">
+          <p>"Brewed Bliss has the best coffee in town. I’m a regular customer for a reason!" - Jessica M.</p>
+        </div>
+      </section>
+
+      <!-- Address Section -->
+      <section class="address">
+        <h2>Visit Us</h2>
+        <p>123 Main Street, Chapel Hill, NC, USA 27514</p>
+        <p>Open Monday-Saturday, 7am-8pm</p>
+        <p>Phone: 123-456-7890</p>
+        <p>For more contact information, visit our contact page:</p>
+        <button class="contact-btn" id="contact-btn" onclick="window.location.href='contact.html'">Contact Us</button>
       </section>
     </main>
 
     <footer>
-      <p>&copy; David Nguyen - A COMP-126 Project</p>
+      <p>&copy; 2024 - The Brewed Bliss Coffee Shop</p>
     </footer>
 
     <script src="js/script.js"></script>

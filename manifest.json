@@ -1,0 +1,29 @@
+{
+  "name": "Brewed Bliss Coffee",
+  "short_name": "BrewedBlissCoffee",
+  "description": "Explore the creative and enjoyable Brewed Bliss website.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#6B4F4F",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "img/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "scope": "/",
+  "categories": ["business", "coffee", "food"]
+}
