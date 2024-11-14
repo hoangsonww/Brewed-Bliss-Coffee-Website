@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Marvelous Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Here I am using Font Awesome for the menu (hamburger) icon for better aesthetics -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enhance the website with a favicon -->
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1 class="site-title">Brewed Bliss</h1>
+        <ul class="desktop-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Offerings</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon"><i class="fas fa-bars"></i></div>
+      </nav>
+      <ul class="mobile-nav-links" id="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Offerings</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="welcome-section">
+        <h2>Welcome to A Marvelous Website</h2>
+        <h3>We're glad you are here</h3>
+        <p>Explore this creative website created for your enjoyment!</p>
+        <button class="welcome-button">Discover More</button>
+      </section>
+
+      <section class="form-section">
+        <h2>Contact Us</h2>
+        <h4>Join our mailing list for updates!</h4>
+        <form id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <button type="submit" class="form-button">SUBMIT</button>
+        </form>
+      </section>
+
+      <section class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="img/img1.jpg" alt="Gallery Image 1" class="gallery-img">
+            <img src="img/img2.jpg" alt="Gallery Image 2" class="gallery-img">
+            <img src="img/img3.jpg" alt="Gallery Image 3" class="gallery-img">
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; David Nguyen - A COMP-126 Project</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

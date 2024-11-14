@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background: #6B4F4F;
+  color: #F0E5CF;
+}
+
+a {
+  text-decoration: underline;
+  color: #F0E5CF;
+}
+
+a:hover {
+  color: #220070;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.site-title {
+  font-size: 1.5rem;
+}
+
+.menu-icon {
+  display: block;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.menu-icon:hover {
+  color: #ffd700;
+}
+
+.mobile-nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #6B4F4F;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.5s ease;
+}
+
+.mobile-nav-links li {
+  text-align: center;
+}
+
+.mobile-nav-links a {
+  color: #fff;
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.mobile-nav-links a:hover {
+  color: #ffd700;
+}
+
+.desktop-nav-links {
+  display: none;
+}
+
+main {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-section {
+  width: 100%;
+}
+
+.welcome-section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-section,
+.contact-section,
+.welcome-section,
+.form-section,
+.gallery-section {
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-section h2,
+.contact-section h2,
+.welcome-section h2,
+.welcome-section p,
+.about-section p,
+.contact-section p,
+.form-section h2,
+.gallery-section h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.welcome-section h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.welcome-button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.75rem 2rem;
+  background-color: #220070;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.welcome-button:hover {
+  background-color: #11003a;
+}
+
+.form-section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-section h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+form input:hover,
+form input:focus {
+  border-color: #220070;
+}
+
+.form-button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  background: linear-gradient(45deg, #220070, #4b0082, #6a0dad);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  transform: scale(1.02);
+  background: linear-gradient(45deg, #6a0dad, #4b0082, #220070);
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gallery-img {
+  width: 100%;
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.gallery-img:hover {
+  transform: scale(1.02);
+}
+
+footer {
+  background-color: #220070;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Desktop Styles (min-width: 769px) */
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .desktop-nav-links {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+  }
+
+  .desktop-nav-links li {
+    margin-left: 2rem;
+  }
+
+  .desktop-nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .desktop-nav-links a:hover {
+    color: #ffd700;
+  }
+
+  .mobile-nav-links {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+  .welcome-section,
+  .form-section {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .contact-section {
+    width: 100%;
+  }
+
+  .form-section {
+    max-width: 600px;
+    margin: 0;
+  }
+
+  .gallery-section {
+    flex-basis: 100%;
+    margin-top: 2rem;
+  }
+
+  .gallery {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .gallery-img {
+    max-width: 32%;
+  }
+}
