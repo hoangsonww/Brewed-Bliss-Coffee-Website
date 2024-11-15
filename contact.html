@@ -1,53 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Contact - A Marvelous Website</title>
-		<link rel="stylesheet" href="css/styles.css">
-		 <!-- Here I am using Font Awesome for the menu (hamburger) icon for better aesthetics -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Brewed Bliss Coffee</title>
+    <link rel="stylesheet" href="css/styles.css">
+   	<!-- Here I am using Font Awesome for the menu (hamburger) icon for better aesthetics -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-		<!-- Enhance the website with a favicon -->
+    <!-- Enhance the website with a favicon -->
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-	</head>
-	<body>
-		<header>
-			<nav class="navbar">
-				<h1 class="site-title">A Marvelous Website</h1>
-				<ul class="desktop-nav-links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="about.html">About</a></li>
-				</ul>
-				<div class="menu-icon" id="menu-icon">&#9776;</div>
-			</nav>
-			<ul class="mobile-nav-links" id="mobile-nav-links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="about.html">About</a></li>
-			</ul>
-		</header>
+    <!-- Enhance the app even more with a manifest file to make it a PWA -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Theme color for the app -->
+    <meta name="theme-color" content="#6B4F4F">
+  </head>
 
-		<main>
-			<section class="contact-section">
-				<h2>Contact Us</h2>
-				<p>If you have any questions or just want to say hello, feel free to reach out. I appreciate your interest in this <strong>marvelous</strong> website! Let me know if this website needs any improvements - I would love to hear your feedback! Fill out the form in the <a href="index.html">home page</a> section to get in touch.</p>
-			</section>
+  <body>
+    <header>
+			<!-- Desktop Navigation Bar -->
+      <nav class="navbar">
+        <h1 class="site-title">Brewed Bliss</h1>
+        <ul class="desktop-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Offerings</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon"><i class="fas fa-bars"></i></div>
+      </nav>
 
-			<section class="gallery-section">
-				<h2>Gallery</h2>
-				<div class="gallery">
-					<img src="img/img1.jpg" alt="Gallery Image 1" class="gallery-img">
-					<img src="img/img2.jpg" alt="Gallery Image 2" class="gallery-img">
-					<img src="img/img3.jpg" alt="Gallery Image 3" class="gallery-img">
+			<!-- Mobile Navigation Bar -->
+      <ul class="mobile-nav-links" id="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Offerings</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </header>
+
+		<!-- Welcome Banner Section -->
+		<section class="welcome-banner">
+			<h2>Contact Brewed Bliss Coffee</h2>
+			<p>Get in Touch with Us for Any Questions or Special Requests or even Collaborations!</p>
+		</section>
+
+		<img src="img/intro-image.jpg" alt="Welcome Image" class="intro-img" loading="eager">
+
+    <main class="contact-main">
+      <!-- Information Text Section -->
+      <section class="contact-info">
+        <h2>Welcome to Brewed Bliss</h2>
+        <p>We’re here to provide you with the best coffee experience, whether you're looking for a cozy place to enjoy your favorite brew or need more information about our offerings.</p>
+        <p>Feel free to reach out to us for any questions, feedback, or special requests. At Brewed Bliss, we value our customers' input and look forward to hearing from you!</p>
+        <p>Stop by for a fresh cup of coffee, meet our baristas, or just relax in our warm, inviting space. Your comfort and satisfaction are our top priorities.</p>
+				<p>Additionally, we are open to collaborations and partnerships. If you have an idea or proposal, we'd love to hear from you!</p>
+				<hr>
+				<p>Phone: +1-123-456-7890</p>
+				<p>Email: <a href="mailto:snghoang@unc.edu">snghoang@unc.edu</a></p>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section class="contact-form">
+        <h2>Have any questions? Let us know!</h2>
+        <form action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+		<!-- Location and Hours Section -->
+		<div class="location-hours-container">
+			<section class="location-hours">
+				<h2>Visit Us</h2>
+				<div class="location-hours-content">
+					<div class="hours">
+						<h3>Our Hours</h3>
+						<p>Monday - Friday: 7:00 AM - 6:00 PM</p>
+						<p>Saturday: 8:00 AM - 4:00 PM</p>
+						<p>Sunday: Closed</p>
+					</div>
+					<div class="address-contact">
+						<h3>Our Location</h3>
+						<p>123 Main Street</p>
+						<p>Chapel Hill, NC, USA</p>
+						<p>27514</p>
+					</div>
 				</div>
 			</section>
-		</main>
+		</div>
 
-		<footer>
-			<p>&copy; David Nguyen - A COMP-126 Project</p>
-		</footer>
+    <footer>
+      <p>&copy; 2024 - The Brewed Bliss Coffee Shop</p>
+    </footer>
 
-		<script src="js/script.js"></script>
-	</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>

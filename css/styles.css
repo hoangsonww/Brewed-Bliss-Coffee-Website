@@ -34,7 +34,7 @@ a:hover {
 }
 
 .site-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .menu-icon {
@@ -53,18 +53,19 @@ a:hover {
   padding: 1.5rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
+  margin-bottom: 1.5rem;
 }
 
 .welcome-banner h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #333;
+  color: #6B4F4F;
   margin-bottom: 0.5rem;
 }
 
 .welcome-banner p {
   font-size: 1.1rem;
-  color: #333;
+  color: #6B4F4F;
 }
 
 .mobile-nav-links {
@@ -125,13 +126,13 @@ main {
     transform: scale(1);
   }
   to {
-    transform: scale(1.02);
+    transform: scale(1.01);
   }
 }
 
 @keyframes scaleDown {
   from {
-    transform: scale(1.02);
+    transform: scale(1.01);
   }
   to {
     transform: scale(1);
@@ -193,12 +194,14 @@ main {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  width: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 40%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .address button:hover {
   background-color: #555;
+  transform: scale(1.01);
 }
 
 /* Features Container Styling */
@@ -248,22 +251,22 @@ main {
 /* Gallery Section Styling */
 /* Gallery Section Styling */
 /* Gallery Section Styling */
-.gallery {
+.home-gallery {
   width: 100%;           /* Full-width for the gallery */
   margin: 2rem auto;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #f7f4f0;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.gallery h2 {
+.home-gallery h2 {
   color: #6B4F4F;
   margin-bottom: 1rem;
 }
 
-.gallery p { 
+.home-gallery p { 
   color: #555;
   margin-bottom: 1.5rem;
 }
@@ -286,8 +289,322 @@ main {
 
 /* Hover effect for images */
 .gallery-img:hover {
+  transform: scale(1.01); /* Slight zoom effect on hover */
+}
+
+/* About Us and Values Layout */
+.about-values-container {
+  display: flex;
+  flex-direction: column; /* Stacked layout on mobile */
+  gap: 2rem;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.about-section, .values-section {
+  background-color: #f7f4f0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2, .values-section h2 {
+  color: #6B4F4F;
+  margin-bottom: 1rem;
+}
+
+.values-section {
+  padding-left: 2.5rem;
+}
+
+.team-container {
+  padding: 1rem;
+}
+
+/* Meet Our Team Section */
+.team-section {
+  margin: 2rem auto;
+  background-color: #f7f4f0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-section h2 {
+  color: #6B4F4F;
+  margin-bottom: 1rem;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column on mobile */
+  gap: 1.5rem;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-img {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 140px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-img:hover {
+  transform: scale(1.05);
+}
+
+/* Gallery Container Styling */
+.gallery-container {
+  padding: 1rem;
+}
+
+/* Gallery Section Styling */
+.about-gallery {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f7f4f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about-gallery h2 {
+  color: #6B4F4F;
+  margin-bottom: 1rem;
+}
+
+.about-gallery p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive Gallery Grid */
+.gallery-grid-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+  gap: 10px;
+}
+
+/* Individual Gallery Item Styling */
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+}
+
+/* Image Styling */
+.gallery-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  background-color: #f0f0f0;
+}
+
+.gallery-img:hover {
   transform: scale(1.02); /* Slight zoom effect on hover */
 }
+
+/* Caption Styling */
+figcaption {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 2x4 Layout for Larger Screens */
+@media (min-width: 768px) {
+  .gallery-grid-about {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows on desktop */
+  }
+}
+
+.services-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  grid-template-columns: 1fr; /* Default to single column on mobile */
+}
+
+/* Grid Layout for Larger Screens */
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on desktop */
+    grid-template-rows: auto auto;         /* 2 rows to make 2x2 grid */
+  }
+}
+
+/* Contact Page Layout */
+.contact-main {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column on mobile */
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.contact-main a {
+  color: #6B4F4F;
+}
+
+.contact-main a:hover {
+  color: #555;
+}
+
+/* Text Section Styling */
+.contact-info {
+  background-color: #f7e9d7;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info h2 {
+  color: #6B4F4F;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+/* Form Section Styling */
+.contact-form {
+  background-color: #f7e9d7;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form h2 {
+  color: #6B4F4F;
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  background-color: #6B4F4F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #5a3f3f;
+}
+
+/* Two-Column Layout for Larger Screens */
+@media (min-width: 768px) {
+  .contact-main {
+    grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+  }
+}
+
+.location-hours-container {
+  padding: 1rem;
+}
+
+/* Location and Hours Section */
+.location-hours {
+  background-color: #f7e9d7;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.location-hours h2 {
+  color: #6B4F4F;
+  margin-bottom: 1rem;
+}
+
+/* Use Grid Layout to Ensure Equal Heights for .hours and .address */
+.location-hours-content {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column on mobile */
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hours, .address-contact {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center;
+  min-height: 200px; /* Ensures they have the same minimum height */
+  text-align: center;
+}
+
+/* Ensuring Uniform Text Styles */
+.hours h3, .address-contact h3 {
+  color: #6B4F4F;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.hours p, .address-contact p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Two-Column Layout for Larger Screens */
+@media (min-width: 768px) {
+  .location-hours-content {
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 1.5rem;
+  }
+}
+
 
 footer {
   background-color: #6B4F4F;
@@ -355,5 +672,18 @@ footer p {
   .features-container {
     flex-direction: row; /* Side-by-side on desktop */
     gap: 1rem;
+  }
+
+  .about-values-container {
+    flex-direction: row; /* Side-by-side layout on desktop */
+    gap: 2rem;
+  }
+
+  .about-section, .values-section {
+    flex: 1; /* Take equal space side-by-side */
+  }
+
+  .team-members {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
   }
 }
