@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project, titled **Brewed Bliss Coffee**, is the final project for the **COMP-126** class at **University of North Carolina at Chapel Hill** under the instruction of **Professor Tessa Joseph-Nicholas**. It is a comprehensive, fully-responsive website designed for a fictional coffee shop, Brewed Bliss, located in Chapel Hill, NC. The website aims to provide an engaging and immersive experience for users, highlighting the coffee shop’s offerings, values, and community-centered atmosphere.
+This project, titled **Brewed Bliss Coffee**, is the final project for the **COMP-126** class at **University of North Carolina at Chapel Hill** under the instruction of **Professor Tessa Joseph-Nicholas**. It is a comprehensive, fully-responsive website designed for a soon-to-open coffee shop, Brewed Bliss, located in Chapel Hill, NC. The website aims to provide an engaging and immersive experience for users, highlighting the coffee shop’s offerings, values, and community-centered atmosphere.
 
 ## Project Objectives
 
@@ -50,6 +50,15 @@ root/
 - **Alt Text on Images**: Each image includes alt text for visually impaired users.
 - **Color Contrast**: Colors were chosen to meet WCAG standards for contrast, ensuring readability.
 - **Keyboard Accessibility**: Navigation and interactive elements can be accessed via keyboard input.
+
+## A Note on Images
+
+- All images used in this project are sourced from [Unsplash](https://unsplash.com/), [Adobe Stock](https://stock.adobe.com/), and [Pexels](https://www.pexels.com/).
+- They are all licensed for free use and modification without attribution.
+
+## Author
+
+- [Son (David) Nguyen](https://github.com/hoangsonww), created as the final project for COMP-126 at UNC-Chapel Hill, Fall 2024.
 
 ---
 
