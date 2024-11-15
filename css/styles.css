@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+/* MOBILE FIRST STYLINGS */
 body {
   line-height: 1.6;
   color: #333;
@@ -26,6 +33,7 @@ a:hover {
   color: #220070;
 }
 
+/* General Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -47,27 +55,7 @@ a:hover {
   color: #ffd700;
 }
 
-.welcome-banner {
-  background-color: #f3e8db;
-  text-align: center;
-  padding: 1.5rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  margin-bottom: 1.5rem;
-}
-
-.welcome-banner h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #6B4F4F;
-  margin-bottom: 0.5rem;
-}
-
-.welcome-banner p {
-  font-size: 1.1rem;
-  color: #6B4F4F;
-}
-
+/* Mobile Navigation Styling */
 .mobile-nav-links {
   list-style: none;
   display: flex;
@@ -99,6 +87,29 @@ a:hover {
   display: none;
 }
 
+/* Welcome Banner Styling */
+.welcome-banner {
+  background-color: #f3e8db;
+  text-align: center;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.welcome-banner h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6B4F4F;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-banner p {
+  font-size: 1.1rem;
+  color: #6B4F4F;
+}
+
+/* Main Container Styling */
 main {
   display: flex;
   flex-direction: column;
@@ -109,6 +120,7 @@ main {
   height: 100%;
 }
 
+/* Intro Image Styling */
 .intro-img {
   width: 95%;             
   max-width: 1200px; 
@@ -121,6 +133,7 @@ main {
   animation: scaleDown 0.3s forwards;
 }
 
+/* Hover Animation and Effects for images */
 @keyframes scaleUp {
   from {
     transform: scale(1);
@@ -147,6 +160,7 @@ main {
   animation: scaleDown 0.3s forwards;
 }
 
+/* About Us, Featured Brews, Testimonials, and Values Containers Styling */
 .about-us, .featured-brews, .why-choose-us, .testimonials {
   width: 100%;
   margin: 2rem auto;
@@ -166,6 +180,7 @@ main {
   margin-bottom: 1rem;
 }
 
+/* Address Container Styling */
 .address {
   display: flex;
   flex-direction: column;
@@ -207,7 +222,7 @@ main {
 /* Features Container Styling */
 .features-container {
   display: flex;
-  flex-direction: column; /* Stack vertically by default */
+  flex-direction: column;
   gap: 2rem;
   margin: 0 auto;
 }
@@ -248,11 +263,9 @@ main {
   margin-bottom: 0.5rem;
 }
 
-/* Gallery Section Styling */
-/* Gallery Section Styling */
-/* Gallery Section Styling */
+/* Gallery Section in Homepage Styling */
 .home-gallery {
-  width: 100%;           /* Full-width for the gallery */
+  width: 100%;
   margin: 2rem auto;
   padding: 1.5rem;
   background-color: #f7f4f0;
@@ -271,31 +284,28 @@ main {
   margin-bottom: 1.5rem;
 }
 
-/* Gallery Grid Styling */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2x2 grid on smaller screens */
-  gap: 10px; /* Space between images */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
-/* Image Styling */
 .gallery-img {
   width: 100%;
-  aspect-ratio: 1 / 1;   /* Ensures each image is square */
-  object-fit: cover;      /* Crops and scales images to fill the square space */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 8px;
-  transition: transform 0.3s ease; /* Add a subtle zoom on hover */
+  transition: transform 0.3s ease;
 }
 
-/* Hover effect for images */
 .gallery-img:hover {
-  transform: scale(1.01); /* Slight zoom effect on hover */
+  transform: scale(1.01);
 }
 
-/* About Us and Values Layout */
+/* About Us Page Layout and Styling */
 .about-values-container {
   display: flex;
-  flex-direction: column; /* Stacked layout on mobile */
+  flex-direction: column;
   gap: 2rem;
   margin: 1rem auto;
   padding: 1rem;
@@ -321,7 +331,6 @@ main {
   padding: 1rem;
 }
 
-/* Meet Our Team Section */
 .team-section {
   margin: 2rem auto;
   background-color: #f7f4f0;
@@ -337,7 +346,7 @@ main {
 
 .team-members {
   display: grid;
-  grid-template-columns: 1fr; /* Single column on mobile */
+  grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
@@ -358,12 +367,10 @@ main {
   transform: scale(1.05);
 }
 
-/* Gallery Container Styling */
 .gallery-container {
   padding: 1rem;
 }
 
-/* Gallery Section Styling */
 .about-gallery {
   margin: 2rem auto;
   padding: 1.5rem;
@@ -383,14 +390,12 @@ main {
   margin-bottom: 1.5rem;
 }
 
-/* Responsive Gallery Grid */
 .gallery-grid-about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
-/* Individual Gallery Item Styling */
 .gallery-item {
   display: flex;
   flex-direction: column;
@@ -402,7 +407,6 @@ main {
   background-color: #f0f0f0;
 }
 
-/* Image Styling */
 .gallery-img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -412,10 +416,10 @@ main {
 }
 
 .gallery-img:hover {
-  transform: scale(1.02); /* Slight zoom effect on hover */
+  transform: scale(1.02);
 }
 
-/* Caption Styling */
+/* Caption for Gallery Images */
 figcaption {
   padding: 0.5rem;
   font-size: 0.9rem;
@@ -425,34 +429,19 @@ figcaption {
   height: 100%;
 }
 
-/* 2x4 Layout for Larger Screens */
-@media (min-width: 768px) {
-  .gallery-grid-about {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
-    grid-template-rows: repeat(2, 1fr); /* 2 rows on desktop */
-  }
-}
-
+/* Services Page Layout and Styling */
 .services-grid {
   display: grid;
   gap: 1.5rem;
   margin: 2rem auto;
   padding: 1rem;
-  grid-template-columns: 1fr; /* Default to single column on mobile */
-}
-
-/* Grid Layout for Larger Screens */
-@media (min-width: 768px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on desktop */
-    grid-template-rows: auto auto;         /* 2 rows to make 2x2 grid */
-  }
+  grid-template-columns: 1fr;
 }
 
 /* Contact Page Layout */
 .contact-main {
   display: grid;
-  grid-template-columns: 1fr; /* Single column on mobile */
+  grid-template-columns: 1fr;
   gap: 2rem;
   margin: 2rem auto;
   padding: 1rem;
@@ -466,7 +455,6 @@ figcaption {
   color: #555;
 }
 
-/* Text Section Styling */
 .contact-info {
   background-color: #f7e9d7;
   padding: 2rem;
@@ -487,7 +475,6 @@ figcaption {
   line-height: 1.6;
 }
 
-/* Form Section Styling */
 .contact-form {
   background-color: #f7e9d7;
   padding: 2rem;
@@ -537,18 +524,10 @@ figcaption {
   background-color: #5a3f3f;
 }
 
-/* Two-Column Layout for Larger Screens */
-@media (min-width: 768px) {
-  .contact-main {
-    grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
-  }
-}
-
 .location-hours-container {
   padding: 1rem;
 }
 
-/* Location and Hours Section */
 .location-hours {
   background-color: #f7e9d7;
   padding: 2rem;
@@ -563,10 +542,9 @@ figcaption {
   margin-bottom: 1rem;
 }
 
-/* Use Grid Layout to Ensure Equal Heights for .hours and .address */
 .location-hours-content {
   display: grid;
-  grid-template-columns: 1fr; /* Single column on mobile */
+  grid-template-columns: 1fr; 
   gap: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -578,13 +556,12 @@ figcaption {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers content vertically */
+  justify-content: center;
   align-items: center;
-  min-height: 200px; /* Ensures they have the same minimum height */
+  min-height: 200px;
   text-align: center;
 }
 
-/* Ensuring Uniform Text Styles */
 .hours h3, .address-contact h3 {
   color: #6B4F4F;
   margin-bottom: 0.5rem;
@@ -597,15 +574,7 @@ figcaption {
   color: #333;
 }
 
-/* Two-Column Layout for Larger Screens */
-@media (min-width: 768px) {
-  .location-hours-content {
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 1.5rem;
-  }
-}
-
-
+/* Footer Styling */
 footer {
   background-color: #6B4F4F;
   color: #F0E5CF;
@@ -655,35 +624,58 @@ footer p {
   }
 
   .gallery-grid {
-    grid-template-columns: repeat(4, 1fr); /* 1x4 grid on larger screens */
+    grid-template-columns: repeat(4, 1fr);
   }
   
   .intro-img {
-    width: 80%;             /* Set the width to 80% of the screen */
-    max-width: 1200px;      /* Optional: Limit the maximum width for larger screens */
-    height: 300px;           /* Maintain the aspect ratio */
-    display: block;         /* Center the image horizontally */
-    margin: 0 auto;         /* Center the image horizontally */
-    border-radius: 10px;    /* Optional: Add rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a soft shadow */
+    width: 80%;
+    max-width: 1200px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     object-fit: cover;
   }
 
   .features-container {
-    flex-direction: row; /* Side-by-side on desktop */
+    flex-direction: row;
     gap: 1rem;
   }
 
   .about-values-container {
-    flex-direction: row; /* Side-by-side layout on desktop */
+    flex-direction: row;
     gap: 2rem;
   }
 
   .about-section, .values-section {
-    flex: 1; /* Take equal space side-by-side */
+    flex: 1;
   }
 
   .team-members {
-    grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* 2x4 Layout for Larger Screens for about gallery grid */
+  .gallery-grid-about {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  /* 2x2 Layout for Larger Screens for services gallery grid */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;  
+  }
+
+  /* 2x2 Layout for Larger Screens for contact page main section */
+  .contact-main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* 2x2 Layout for Larger Screens for location and hours container */
+  .location-hours-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
   }
 }
