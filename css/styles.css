@@ -165,9 +165,7 @@ main {
   animation: scaleUp 0.3s forwards
 }
 
-.intro-img:not(:hover),
-.intro-img:not(:focus),
-.intro-img:not(:active) {
+.intro-img:not(:hover):not(:focus):not(:active) {
   animation: scaleDown 0.3s forwards;
 }
 
