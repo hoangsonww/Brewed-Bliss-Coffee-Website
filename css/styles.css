@@ -30,7 +30,9 @@ a {
   color: #F0E5CF;
 }
 
-a:hover {
+a:hover,
+a:focus,
+a:active {
   color: #220070;
 }
 
@@ -52,7 +54,9 @@ a:hover {
   cursor: pointer;
 }
 
-.menu-icon:hover {
+.menu-icon:hover,
+.menu-icon:focus,
+.menu-icon:active {
   color: #ffd700;
 }
 
@@ -80,7 +84,9 @@ a:hover {
   transition: color 0.3s;
 }
 
-.mobile-nav-links a:hover {
+.mobile-nav-links a:hover,
+.mobile-nav-links a:focus,
+.mobile-nav-links a:active {
   color: #ffd700;
 }
 
@@ -153,11 +159,15 @@ main {
   }
 }
 
-.intro-img:hover {
+.intro-img:hover,
+.intro-img:focus,
+.intro-img:active {
   animation: scaleUp 0.3s forwards
 }
 
-.intro-img:not(:hover) {
+.intro-img:not(:hover),
+.intro-img:not(:focus),
+.intro-img:not(:active) {
   animation: scaleDown 0.3s forwards;
 }
 
@@ -178,6 +188,10 @@ main {
 .about-us h2, .featured-brews h2, .why-choose-us h2, .testimonials h2 {
   color: #6B4F4F;
   text-align: center;
+  margin-bottom: 1rem;
+}
+
+.why-choose-us p {
   margin-bottom: 1rem;
 }
 
@@ -215,7 +229,9 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.address button:hover {
+.address button:hover,
+.address button:focus,
+.address button:active {
   background-color: #555;
   transform: scale(1.01);
 }
@@ -299,7 +315,9 @@ main {
   transition: transform 0.3s ease;
 }
 
-.gallery-img:hover {
+.gallery-img:hover,
+.gallery-img:focus,
+.gallery-img:active {
   transform: scale(1.01);
 }
 
@@ -364,7 +382,9 @@ main {
   transition: transform 0.3s ease;
 }
 
-.team-img:hover {
+.team-img:hover,
+.team-img:focus,
+.team-img:active {
   transform: scale(1.05);
 }
 
@@ -416,7 +436,9 @@ main {
   background-color: #f0f0f0;
 }
 
-.gallery-img:hover {
+.gallery-img:hover,
+.gallery-img:focus,
+.gallery-img:active {
   transform: scale(1.02);
 }
 
@@ -452,7 +474,9 @@ figcaption {
   color: #6B4F4F;
 }
 
-.contact-main a:hover {
+.contact-main a:hover,
+.contact-main a:focus,
+.contact-main a:active {
   color: #555;
 }
 
@@ -521,7 +545,9 @@ figcaption {
   transition: background-color 0.3s;
 }
 
-.contact-form button:hover {
+.contact-form button:hover,
+.contact-form button:focus,
+.contact-form button:active {
   background-color: #5a3f3f;
 }
 
@@ -612,7 +638,9 @@ footer p {
     transition: color 0.3s;
   }
 
-  .desktop-nav-links a:hover {
+  .desktop-nav-links a:hover,
+  .desktop-nav-links a:focus,
+  .desktop-nav-links a:active {
     color: #ffd700;
   }
 
