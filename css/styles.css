@@ -604,6 +604,7 @@ figcaption {
   align-items: center;
   min-height: 200px;
   text-align: center;
+  transition: transform 0.3s;
 }
 
 .hours:hover,
@@ -612,7 +613,7 @@ figcaption {
 .address-contact:hover,
 .address-contact:focus,
 .address-contact:active {
-  transform: scale(1.01);
+  transform: scale(1.02);
 }
 
 .hours h3, .address-contact h3 {
