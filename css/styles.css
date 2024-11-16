@@ -606,6 +606,15 @@ figcaption {
   text-align: center;
 }
 
+.hours:hover,
+.hours:focus,
+.hours:active,
+.address-contact:hover,
+.address-contact:focus,
+.address-contact:active {
+  transform: scale(1.01);
+}
+
 .hours h3, .address-contact h3 {
   color: #6B4F4F;
   margin-bottom: 0.5rem;
