@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-This project, titled **Brewed Bliss Coffee**, is the final project for the **COMP-126** class at **University of North Carolina at Chapel Hill** under the instruction of **Professor Tessa Joseph-Nicholas**. It is a comprehensive, fully-responsive website designed for a soon-to-open coffee shop, Brewed Bliss, located in Chapel Hill, NC. The website aims to provide an engaging and immersive experience for users, highlighting the coffee shop’s offerings, values, and community-centered atmosphere.
+This project, titled **Brewed Bliss Coffee**, is the final project for the **COMP-126** class at **University of North Carolina at Chapel Hill** under the instruction of **Professor Tessa Joseph-Nicholas**. It is a comprehensive, fully-responsive website designed for a soon-to-open coffee shop, Brewed Bliss, located in Chapel Hill, NC. The website aims to provide an engaging and immersive experience for users.
 
 ## Project Objectives
 
-The purpose of this project is to apply client-driven web development principles, as taught in COMP-126, to build a multi-page website that meets the needs of a business client (in this case, Brewed Bliss - an 'imaginary' coffee shop in Chapel Hill, NC). The project follows best practices in HTML, CSS, and JS to create a responsive, accessible, and aesthetically pleasing user experience.
+The purpose of this project is to apply client-driven web development principles, as taught in COMP-126, to build a multi-page website that meets the needs of a business client (in this case, Brewed Bliss - a soon-to-open coffee shop in Chapel Hill, NC). The project follows best practices in HTML, CSS, and JS to create a responsive, accessible, and aesthetically pleasing user experience.
 
 ## User Interface
 
