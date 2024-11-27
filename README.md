@@ -8,6 +8,10 @@ This project, titled **Brewed Bliss Coffee**, is the final project for the **COM
 
 The purpose of this project is to apply client-driven web development principles, as taught in COMP-126, to build a multi-page website that meets the needs of a business client (in this case, Brewed Bliss - a soon-to-open coffee shop in Chapel Hill, NC). The project follows best practices in HTML, CSS, and JS to create a responsive, accessible, and aesthetically pleasing user experience.
 
+### Status
+
+The project is currently complete, as of 11/27/2024.
+
 ## User Interface
 
 ### Desktop View
