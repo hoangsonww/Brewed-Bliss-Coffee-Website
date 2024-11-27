@@ -1,4 +1,4 @@
-# Brewed Bliss Coffee Website
+# Brewed Bliss Coffee Website ☕
 
 ## Project Overview
 
