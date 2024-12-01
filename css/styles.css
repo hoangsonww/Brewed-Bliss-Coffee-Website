@@ -726,14 +726,14 @@ footer p {
 
   /* 2x2 Layout for Larger Screens for contact page main section */
   .contact-main {
-    display: grid; /* Switch to grid layout for desktop */
-    grid-template-columns: 1fr 1fr; /* Side-by-side layout */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
 
   .contact-info,
   .contact-form {
-    height: 100%; /* Ensure sections have equal height */
+    height: 100%;
   }
 
   /* 2x2 Layout for Larger Screens for location and hours container */
