@@ -3,7 +3,8 @@
  * This function will toggle the height of the mobile navigation links section when
  * the hamburger icon is clicked, with the help of CSS animations for smooth transition.
  */
-document.getElementById('menu-icon').addEventListener( 'click', function () {
+document.getElementById( 'menu-icon' ).addEventListener( 'click', function () {
+	// Get the mobile navigation links and the icon from the HTML DOM
 	const navLinks = document.getElementById('mobile-nav-links');
 	const icon = document.getElementById('menu-icon').querySelector('i');
 
