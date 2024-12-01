@@ -1,7 +1,7 @@
 /**
  * Mobile navigation - I am making my own JavaScript for mobile navigation.
  * This function will toggle the height of the mobile navigation links section when
- * the hamburger icon is clicked, with the help of CSS animations.
+ * the hamburger icon is clicked, with the help of CSS animations for smooth transition.
  */
 document.getElementById('menu-icon').addEventListener( 'click', function () {
 	const navLinks = document.getElementById('mobile-nav-links');
