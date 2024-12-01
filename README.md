@@ -8,6 +8,8 @@ This project, titled **Brewed Bliss Coffee**, is the final project for the **COM
 
 The purpose of this project is to apply client-driven web development principles, as taught in COMP-126, to build a multi-page website that meets the needs of a business client (in this case, Brewed Bliss - a soon-to-open coffee shop in Chapel Hill, NC). The project follows best practices in HTML, CSS, and JS to create a responsive, accessible, and aesthetically pleasing user experience.
 
+All requirements are ensured to be met, including mobile-first design, responsive layout, accessibility considerations, and a focus on user experience. This website is also carefully designed to be engaging, informative, and visually appealing to all users, regardless of their device or accessibility needs!
+
 ### Status
 
 The project is currently complete, as of 11/27/2024.
@@ -21,13 +23,13 @@ The website is hosted on GitHub Pages and can be accessed [here](https://hoangso
 ### Desktop View
 
 <p align="center">
-  <img src="img/desktop-view.png" alt="Desktop View" width="800">
+  <img src="img/desktop-view.png" alt="Desktop View" width="100%">
 </p>
 
 ### Mobile View
 
 <p align="center">
-  <img src="img/mobile-view.png" alt="Mobile View" width="300">
+  <img src="img/mobile-view.png" alt="Mobile View" width="60%">
 </p>
 
 ## File Structure
@@ -55,9 +57,9 @@ root/
 
 ## Accessibility Considerations
 
-- **Alt Text on Images**: Each image includes alt text for visually impaired users.
-- **Color Contrast**: Colors were chosen to meet WCAG standards for contrast, ensuring readability.
-- **Keyboard Accessibility**: Navigation and interactive elements can be accessed via keyboard input.
+- **Alt Text on All Images**: Each image includes alt text for visually impaired users.
+- **Color Contrast**: Colors were chosen to meet WCAG standards (with all colors meeting at least the AA requirement) for contrast to ensure their readability.
+- **Keyboard Accessibility**: All navigation and interactive elements can be accessed via keyboard input as well.
 
 ## A Note on Images
 
@@ -70,4 +72,4 @@ root/
 
 ---
 
-Thank you for reviewing this project! We hope this website demonstrates the skills and principles learned in COMP-126 and provides a comprehensive, engaging experience for anyone visiting Brewed Bliss Coffee online.
+Thank you for reviewing this project! We hope this website demonstrates the skills and principles learned in COMP-126 and provides a comprehensive, engaging experience for anyone visiting the **Brewed Bliss Coffee** shop online! ☕
